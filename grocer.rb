@@ -29,7 +29,7 @@ def consolidate_cart(cart)
     if jack_in != nil 
       jack_in[:count] += 1 
     else 
-      jack_in = {:item => cart[hg][:item], :price =>} 
+      jack_in = {:item => cart[hg][:item], :price => cart[hg][:price], } 
     end
     hg += 1 
   end
