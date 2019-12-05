@@ -5,7 +5,9 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   
-  
+  bg = 0 
+  while bg < collection.length do 
+    name = collection[bg]
   binding.pry
   
 end
