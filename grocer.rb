@@ -25,11 +25,8 @@ def consolidate_cart(cart)
   hg = 0 
   box1= []
   while hg < cart.length do 
-    jack_in = cart[hg][:item]
-    box1 << jack_in
-    box2 = {}
-    count = 0 
-    while count < 
+    jack_in = find_item_by_name_in_collection(cart)
+    jack_in[:c]
     hg += 1 
   end
   return box 
