@@ -23,10 +23,13 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
  # binding.pry
   hg = 0 
-  box = []
+  box1= []
   while hg < cart.length do 
     jack_in = cart[hg][:item]
-    box << jack_in
+    box1 << jack_in
+    box2 = {}
+    count = 0 
+    while count < 
     hg += 1 
   end
   return box 
