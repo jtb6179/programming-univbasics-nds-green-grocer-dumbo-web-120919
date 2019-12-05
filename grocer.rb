@@ -10,8 +10,6 @@ def find_item_by_name_in_collection(name, collection)
    #binding.pry
     if name == collection[bg][:item]
       collection[bg]
-    else 
-      collection[bg]
     end 
     bg += 1 
   end
