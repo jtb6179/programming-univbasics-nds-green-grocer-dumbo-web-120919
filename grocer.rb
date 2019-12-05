@@ -7,12 +7,11 @@ def find_item_by_name_in_collection(name, collection)
   
   bg = 0 
   while bg < collection.length do
-    team = collection[bg]
    binding.pry
-    if name == team
-      team
+    if name == collection[bg][:item]
+      collection[bg]
     else 
-      team  
+      nil  
     end 
     bg += 1 
   end
