@@ -51,15 +51,17 @@ def apply_coupons(cart, coupons)
         cart_ting_wit_coup[:count] += coupons[grower][:num]
         cart_item[:count] -= coupons[grower][:num]
       else
-        cart_ting_wit_coup = {:item => couponed_stuff, :price => coupons[grower][:cost]/coupons[grower]}
-        
-          
+        cart_ting_wit_coup = {:item => couponed_stuff, :price => coupons[grower][:cost]/coupons[grower][:num], :count => coupons[grower][:num], 
+          :clearance => cart_item[:clearance]
+        }
+        cart << cart_ting_wit_coup
+        cart_item[:count] -= coupons[grower][:num]
+      end
+      
     end
-    
-    
     grower += 1 
   end 
-  
+  return cart
 end
 
 def apply_clearance(cart)
