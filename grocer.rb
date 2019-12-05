@@ -51,7 +51,7 @@ def apply_coupons(cart, coupons)
         cart_ting_wit_coup[:count] += coupons[grower][:num]
         cart_item[:count] -= coupons[grower][:num]
       else
-        cart_ting_wit_coup = {}
+        cart_ting_wit_coup = {:item => couponed_stuff, :price => coupons[grower][:cost]/}
         
           
     end
