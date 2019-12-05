@@ -33,6 +33,7 @@ def consolidate_cart(cart)
       :price => cart[hg][:price],
       :clearance => cart[hg][:clearance], 
       :count => 1 } 
+      box1 << jack_in
     end
     hg += 1 
   end
