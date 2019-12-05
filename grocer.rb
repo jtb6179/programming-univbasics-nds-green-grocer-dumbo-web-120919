@@ -42,6 +42,9 @@ end
 
 def apply_coupons(cart, coupons)
   grower = 0 
+  while grower < coupons.length do
+    
+  end 
   
 end
 
