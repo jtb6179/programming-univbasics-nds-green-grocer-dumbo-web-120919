@@ -46,6 +46,9 @@ def apply_coupons(cart, coupons)
     cart_item = find_item_by_name_in_collection(coupons[grower][:item], cart)
     couponed_stuff = "#{coupons[grower][:item]} W/COUPON"
     cart_ting_w/coup = find_item_by_name_in_collection(couponed_stuff, cart)
+    if 
+      
+    end
     
     
     grower += 1 
