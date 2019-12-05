@@ -50,7 +50,10 @@ def apply_coupons(cart, coupons)
       if cart_ting_wit_coup
         cart_ting_wit_coup[:count] += coupons[grower][:num]
         cart_item[:count] -= coupons[grower][:num]
-      
+      else
+        cart_ting_wit_coup = {}
+        
+          
     end
     
     
