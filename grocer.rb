@@ -48,6 +48,7 @@ def apply_coupons(cart, coupons)
     cart_ting_wit_coup = find_item_by_name_in_collection(couponed_stuff, cart)
     if cart_item && cart_item[:count] >= coupons[grower][:num]
       if cart_ting_wit_coup
+        
       
     end
     
