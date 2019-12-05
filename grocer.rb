@@ -25,7 +25,11 @@ def consolidate_cart(cart)
   hg = 0 
   box = []
   while hg < cart.length do 
-    
+    jack_in = cart[hg][:item]
+    box << jack_in
+    hg += 1 
+  end
+  return box 
 end
 
 def apply_coupons(cart, coupons)
